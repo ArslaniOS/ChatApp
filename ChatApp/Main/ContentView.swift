@@ -24,7 +24,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Toggle("User 1 Active", isOn: $isUser1Active)
+            Toggle("\(viewModel.currentUser.id) Active", isOn: $isUser1Active)
                 .padding()
             
             Text("Current User: \(viewModel.currentUser.id)")
